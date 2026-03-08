@@ -15,7 +15,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="../img/ME.png">
   <link rel="manifest" href="/site.webmanifest">
  <style>
-    /* Styles spécifiques pour la page d'accueil */
+    /* Specific styles for the home page */
     .hero {
       display: flex;
       align-items: center;
@@ -75,7 +75,7 @@
       100% { transform: scale(1.05); opacity: 0.5; }
     }
 
-    /* Animation du texte */
+    /* Text animation */
     .hero h4 {
       font-size: 1.6rem;
       color: var(--main-color);
@@ -166,54 +166,64 @@
     <br>
     <br>
     <br>
-   
     <h2>My Academic Journey</h2>
     <div class="timeline">
       <div class="timeline-item">
-        <img src="../img/ensi.jpeg" alt="ENSI" class="timeline-image">
+      <img src="../img/ensi.jpeg" alt="ENSI" class="timeline-image">
+      <div class="timeline-content">
+        <h3>2024 – 2025</h3>
+        <h4>Research Master’s in Smart Systems</h4>
+        <p><strong>National School of Computer Science (ENSI), Manouba, Tunisia</strong></p>
+        <p>
+          Specialization: Advanced Intelligent Systems <br>
+          Focused on AI, ML, Deep Learning, IoT, TALN, and Cyber-Physical Systems. <br>
+          Completed core and optional modules, plus a research internship, developing skills to design innovative intelligent systems.
+        </p>
+      </div>
+      </div>
+
+      <div class="timeline-item">
+      <img src="../img/ensi.jpeg" alt="ENSI" class="timeline-image">
         <div class="timeline-content">
-          <h3>September 2024 - May 2025</h3>
-          <h4>Research Master's in Data Science</h4>
+          <h3>2022 – 2025</h3>
+          <h4>Engineering Degree in Computer Science</h4>
           <p><strong>National School of Computer Science (ENSI), Manouba, Tunisia</strong></p>
-          <p>Advanced research focus on 3D-4D Computer Vision, Neural Machine Learning, Multidimensional Signal Processing, Medical Imaging, Active Contours and Invariants Statistics, Registration.</p>
+          <p>
+            Specialization: Software Engineering. <br>
+            Focused on Software Quality & Testing, Big Data, Data Mining, Business Intelligence and Applied Deep Learning. <br>
+            Gained practical skills in designing and developing complex software solutions.
+          </p>
         </div>
       </div>
 
       <div class="timeline-item">
-        <img src="../img/ensi.jpeg" alt="ENSI" class="timeline-image">
+        <img src="../img/ipein.png" alt="IPEIN" class="timeline-image">
         <div class="timeline-content">
-          <h3>September 2022 - May 2025</h3>
-          <h4>AI & Software Engineering Degree</h4>
-          <p><strong>National School of Computer Science (ENSI), Manouba, Tunisia</strong></p>
-          <p>Comprehensive program covering Software Engineering, Data Structures and Algorithms, Database Systems, Operating Systems (Linux), UML Modeling, Big Data, Data Mining, Deep Learning, Deep Reinforcement Learning, GenAI, Multi-Agent Systems.</p>
+          <h3>2020 – 2022</h3>
+          <h4>Preparatory Classes in Physics and Technology</h4>
+          <p><strong>Nabeul Preparatory Engineering Institute (IPEIN), Nabeul, Tunisia</strong></p>
+          <p>
+            Intensive two-year program covering advanced Mathematics, Physics, Chemistry, Computer Science and Engineering Technologies including Mechanics and Automation. <br>
+            Ranked 49/678 nationally in preparatory engineering entrance examination.
+          </p>
         </div>
       </div>
 
       <div class="timeline-item">
-        <img src="../img/ipeim.jpg" alt="IPEIM" class="timeline-image">
+        <img src="../img/lycee-abd-laziz.jpg" alt="Baccalaureate" class="timeline-image">
         <div class="timeline-content">
-          <h3>September 2020 - June 2022</h3>
-          <h4>National Diploma in Mathematics and Physics</h4>
-          <p><strong>Preparatory Institute for Engineering Studies of Monastir (IPEIM), Tunisia</strong></p>
-          <p>Ranked 212/1831 nationally in preparatory engineering entrance examination. Intensive program in advanced mathematics, physics, and computer science fundamentals.</p>
+          <h3>2016 – 2020</h3>
+          <h4>Baccalaureate in Technological Sciences</h4>
+          <p><strong>Abd Laziz El Khouja High School, Tunisia</strong></p>
+          <p>
+            Graduated with highest honors with a score of 16.72/20. <br>
+            Focused on Mathematics, Physics, Technology, and basic Computer Science.
+          </p>
         </div>
       </div>
-
-      <div class="timeline-item">
-        <img src="../img/lycee-khniss.jpeg" alt="Baccalaureate" class="timeline-image">
-        <div class="timeline-content">
-          <h3>2020</h3>
-          <h4>Baccalaureate in Mathematics with Great Honors </h4>
-          <p><strong> Khniss High school, Monastir, Tunisia</strong></p>
-          <p>Graduated with great honors,specializing in mathematics with exceptional academic performance (15.64/20 ).</p>
-        </div>
-      </div>
-
-
-
-
     </div>
   </section>
+
   <script>
 document.addEventListener('DOMContentLoaded', function() {
   const menuIcon = document.getElementById('menu-icon');
@@ -236,19 +246,19 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-// Empêcher le clic droit
+// Prevent right-click
 document.addEventListener('contextmenu', (e) => {
   e.preventDefault();
   
 });
 
-// Bloquer F12, Ctrl+Shift+I, Ctrl+U, etc.
+// Block F12, Ctrl+Shift+I, Ctrl+U, etc.
 document.addEventListener('keydown', (e) => {
   if (
     e.key === 'F12' ||
     (e.ctrlKey && e.shiftKey && e.key === 'I') || // Ctrl+Shift+I
     (e.ctrlKey && e.shiftKey && e.key === 'J') || // Ctrl+Shift+J
-    (e.ctrlKey && e.key === 'U') // Ctrl+U (afficher le code source)
+    (e.ctrlKey && e.key === 'U') // Ctrl+U (show source code)
   ) {
     e.preventDefault();
     
