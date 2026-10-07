@@ -644,3 +644,13 @@ section {
     max-width: 220px;
   }
 }
+
+.cert-link {
+      display: inline-block;
+      margin-top: 0.6rem;
+      color: var(--main-color);
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+}
+.cert-link:hover { text-decoration: underline; }
